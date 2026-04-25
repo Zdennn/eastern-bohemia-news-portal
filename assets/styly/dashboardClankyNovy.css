@@ -1,0 +1,222 @@
+.novyClanek {
+    padding: 30px 25px;
+    text-align: left;
+}
+
+.novyClanek h1 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: black;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form .radek {
+    display: flex;
+    gap: 15px;
+}
+
+form input,
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    box-shadow: #444444;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+    outline: none;
+    border-bottom: 2px solid #444444;
+    background-color: #f5f5f5;
+}
+
+form textarea {
+    resize: none;
+    min-height: 80px;
+}
+
+form .obsah {
+    height: 27vh;
+    width: 79vw;
+    resize: none;
+    max-height: 150vh;
+}
+
+form button {
+    padding: 10.5px;
+    font-size: 18px;
+    color: white;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form button:hover {
+    background-color: #333;
+}
+
+.error-zprava,
+.success-zprava {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+}
+
+.success-zprava {
+    color: green;
+}
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.wrapper h2 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.wrapper p {
+    font-size: 12px;
+    color: #666;
+}
+
+.wrapper input {
+    padding: 8px;
+    font-size: 14px;
+    width: 65vw;
+}
+
+.wrapper ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 10px;
+    border-bottom: 2px solid #e0e0e0;
+    background-color: #f9f9f9;
+}
+
+.wrapper ul li {
+    background-color: #e0e0e0;
+    padding: 5px 8px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.wrapper ul li i {
+    cursor: pointer;
+    color: #777;
+    font-size: 12px;
+}
+
+.wrapper ul input {
+    outline: none;
+    flex: 1;
+    font-size: 14px;
+    background-color: transparent;
+}
+.flex1{
+    flex: 1;
+}
+.flex2{
+    flex: 2;
+}
+.modal-buttons{
+    display: flex;
+    flex-direction: row;
+}
+#pridatObrazek{
+    margin-right: 25px;
+}
+#ulozit{
+    background-color: var(--modra);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 6% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%;
+    text-align: center;
+    max-height: 75vh;
+    max-width: 90vw;
+    overflow-y: auto;
+}
+
+.close {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+}
+#previewContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#previewContainer img {
+    max-width: 150px;
+    margin: 10px;
+    margin-bottom: -3px;
+    display: inline-block;
+    position: relative;
+}
+
+.obrazek-item {
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+}
+
+.obrazek-item button {
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+@media(max-width: 700px){
+    .radek{
+        flex-direction: column;
+    }
+}

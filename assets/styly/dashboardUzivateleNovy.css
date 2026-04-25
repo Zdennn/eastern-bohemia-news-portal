@@ -1,0 +1,122 @@
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5% 0px;
+}
+
+.register {
+    background-color: white;
+    padding: 40px 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 320px;
+}
+
+.register h1 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: black;
+}
+
+.register p {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 15px;
+}
+
+.register p a {
+    color: var(--modra);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+}
+form input:focus{
+    outline: none;
+    border-bottom: 2px solid #444444;
+    background-color: #f5f5f5;
+}
+form button {
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+form button:hover {
+    background-color: #333;
+}
+
+.register a {
+    font-size: 12px;
+    text-decoration: underline;
+    color: black;
+}
+
+.input-wrapper {
+    margin-bottom: 15px;
+}
+
+form input.error {
+    border-bottom: 2px solid red;
+}
+
+.error-zprava {
+    position: relative;
+    display: none;
+    top: 15px;
+    transform: translateY(-50%);
+    color: red;
+    padding: 5px 10px;
+    font-size: 12px;
+    z-index: 10;
+}
+
+form input.error + .error-zprava {
+    display: block;
+}
+
+
+
+form select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+    background-color: white;
+    color: #333;
+}
+
+form select:focus {
+    outline: none;
+    border-bottom: 2px solid #444444;
+    background-color: #f5f5f5;
+}
+
+form select.error {
+    border-bottom: 2px solid red;
+}

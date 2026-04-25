@@ -1,0 +1,82 @@
+#komentareAutora{
+    padding: 20px 0px;
+  }
+  
+  #komentareAutora table {
+    display: block;
+    width: 100%;
+    padding: 10px 0px;
+    width: 83.7vw;
+  }
+  
+  #komentareAutora thead {
+    display: none;
+  }
+  
+  #komentareAutora tbody tr {
+    display: block;
+    border: 2px solid rgb(85, 85, 85);
+    border-top: none;
+    padding: 0px;
+  }
+  #komentareAutora tbody tr:nth-of-type(2n) {
+    background-color: #eeeeee;
+  }
+  #komentareAutora tbody tr:first-of-type {
+    border-top: 2px solid rgb(85, 85, 85);
+  }
+  
+  #komentareAutora tbody tr td {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    border-top: solid 2px rgb(145, 145, 145);
+    justify-content: flex-start;
+  }
+  #komentareAutora tbody tr td:first-of-type {
+    border-top: none;
+  }
+  #komentareAutora tbody tr td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    flex-basis: 40%;
+  }
+  button a{
+    color: black;
+  }
+  
+  
+  @media (min-width: 750px) {
+  
+  #komentareAutora table {
+    display: table;
+    width: 100%;
+    padding: 0;
+    border-collapse: collapse;
+  }
+  
+  #komentareAutora thead {
+    display: table-header-group;
+    border-bottom: 2px solid black;
+  }
+  
+  #komentareAutora tbody tr {
+    display: table-row;
+    border: none;
+  }
+  
+  #komentareAutora tbody tr td {
+    display: table-cell;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    border-top: none;
+  }
+  
+  #komentareAutora tbody tr:last-of-type td {
+    border-bottom: none;
+  }
+  
+  #komentareAutora tbody tr td::before {
+    content: none;
+  }
+  }

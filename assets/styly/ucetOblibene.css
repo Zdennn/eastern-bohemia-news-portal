@@ -1,0 +1,233 @@
+a {
+    color: black;
+}
+
+#ucet .druhy {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#ucet .prvni {
+    display: flex;
+    flex-direction: column;
+}
+
+#ucet .druhy {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+}
+
+#ucet .treti {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5vw;
+}
+
+#ucet .druhy a {
+    padding: 5px 15px;
+    margin: 5px 0px;
+}
+
+#profilovka {
+    width: 130px;
+}
+
+#profilovka img {
+    border-radius: 50%;
+    width: 130px;
+}
+
+#ucet {
+    padding: 50px 10% 20px;
+}
+
+#ucet p {
+    padding-top: 20px;
+}
+
+.nastaveni {
+    position: absolute;
+    right: 70px;
+    top: 80px;
+    color: rgb(44, 44, 44);
+    font-size: 40px;
+}
+
+.logout {
+    position: absolute;
+    right: 20px;
+    top: 80px;
+    color: rgb(44, 44, 44);
+    font-size: 40px;
+}
+
+.panel {
+    padding: 20px 10%;
+}
+
+.subPanel {
+    display: flex;
+    flex-direction: column;
+}
+
+.article {
+    padding: 15px 0px;
+    margin: 0px 45px;
+    border-bottom: 2px solid black;
+}
+
+.articleVedle {
+    display: flex;
+    flex-direction: column;
+}
+
+.like {
+    padding: 10px 15px 10px 0px;
+    display: flex;
+    align-items: center;
+
+    background: none;
+    border: none;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+.casDiv {
+    min-width: max-content;
+}
+
+.cas {
+    font-family: "Rubik", sans-serif;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 12px;
+}
+
+.komentarObsah {
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-left: solid 2px black;
+}
+
+.upoutavka {
+    padding: 10px 0px 10px 0px;
+}
+
+.kategorie {
+    color: black;
+    text-decoration: underline;
+    font-family: "Rubik", sans-serif;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 12px;
+}
+
+.casKat {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.textClanek{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding: 0px 0px;
+    text-align: center;
+    flex-direction: column;
+}
+.menuNav{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.menuNav a{
+    padding: 10px 15px;
+    margin: 5px 0px;
+    color: var(--modra);
+    border-bottom: black 1.5px solid;
+    font-size: 18px;
+}
+
+.active{
+    background-color: var(--modra);
+    color: white !important;
+    border-bottom: black 2px solid !important;
+}
+
+.liked {
+    color: red;
+}
+
+@media (max-width: 700px) {
+
+    #profilovka {
+        width: 200px;
+    }
+
+    #profilovka img {
+        width: 200px;
+    }
+
+    #ucet .druhy {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    #ucet .treti {
+        align-items: flex-start;
+    }
+
+}
+
+@media (min-width: 700px) {
+    .articleVedle {
+        flex-direction: row;
+    }
+
+    .textClanek {
+        padding-left: 20px;
+    }
+
+    .obrazek {
+        width: 550px;
+        max-width: 300px;
+    }
+
+    .menu{
+        flex-direction: row;
+        justify-content: space-around;
+        border-bottom: black 2px solid;
+        margin: 20px 10% 20px 10%;
+    }
+    .menuNav{
+        flex-direction: row;
+    }
+    .menuNav a{
+        border: none !important;
+        margin: 0px 25px;
+    }
+
+}
+@media (min-width: 700px) and (max-width: 900px) {
+    .obrazek {
+        width: 1250px;
+    }
+}
+.flex1{
+    flex: 1;
+}
+.flex2{
+    flex: 2;
+}

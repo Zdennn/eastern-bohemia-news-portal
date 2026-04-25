@@ -1,0 +1,46 @@
+.body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 600px;
+}
+
+.oops {
+    font-size: 100px;
+    font-weight: 700;
+    background: linear-gradient(90deg, var(--modra), var(--zelena), var(--cervena));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+p {
+    color: #666;
+    font-size: 16px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: var(--modra);
+    color: white;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    text-decoration: underline;
+}

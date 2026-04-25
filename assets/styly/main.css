@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Adamina&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+:root {
+    --cervena: rgba(226, 0, 61);
+    --zelena: rgba(113, 190, 92);
+    --modra: rgba(60, 165, 214);
+    --bila: rgb(255, 255, 255);
+  }
+*{
+    margin: 0px;
+    text-decoration: none;
+    font-family: "Rubik", sans-serif;
+}
+a{
+    color: white;
+    font-family: "Rubik", sans-serif;
+}
+img{
+    width: 100%;
+    max-width: max-content;
+}
+
+body{
+    overflow-x: hidden;
+}
+select {
+    border: 1px solid #444;
+    padding: 4px 6px;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  select:focus {
+    border-color: #666;
+  }
+  option {
+    font-size: 16px;
+    padding: 5px;
+  }

@@ -1,0 +1,471 @@
+#logo{
+    max-height: 50px;
+    width: auto;
+}
+.slideshow {
+    position: relative;
+    height: 110vh;
+    overflow: hidden;
+    width: 100vw;
+    top: -70px;
+}
+
+.slides {
+    display: flex;
+    flex-direction: row;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); 
+    z-index: 2;
+}
+
+.slide {
+    position: relative;
+    min-width: 100%;
+    height: 110vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    z-index: 1;
+}
+
+
+a.viceTlac {
+    background-color: var(--modra);
+    color: var(--bila);
+    padding: 15px 25px;
+    text-decoration: underline rgba(0, 0, 0, 0);
+    transition: 300ms;
+}
+
+a.viceTlac:hover {
+    text-decoration: underline var(--bila);
+}
+
+#overImg {
+    position: absolute;
+    top: 15vh;
+    left: 10%;
+    right: 10%;
+    width: 70%;
+    height: 80%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+.textNahoru {
+    transform: scaleY(100%);
+}
+
+
+#nadpisTxtObrDiv {
+    position: relative;
+    z-index: 3;
+}
+
+#nadpisTxtObrDiv div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#bar h1 a,
+header nav a {
+    color: white;
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+.hamburger-icon div {
+    width: 40px;
+    height: 4px;
+    background-color: rgb(0, 0, 0);
+    margin: 6px 0px;
+    transform-origin: 6px 3px;
+    transition: 0.4s;
+}
+
+input#hamburger-menu:checked~.hamburger-icon div:first-child {
+    transform: rotate(45deg);
+}
+
+input#hamburger-menu:checked~.hamburger-icon div:nth-child(2) {
+    transform-origin: center;
+    transform: scaleX(-0);
+
+}
+
+input#hamburger-menu:checked~.hamburger-icon div:last-child {
+    transform: rotate(-45deg);
+}
+
+.hamburger-icon {
+    cursor: pointer;
+}
+
+.navMenu {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#bar {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 10%;
+    z-index: 50;
+    transition: 1ms;
+    border-bottom: solid black 2px;
+    align-items: center;
+}
+
+.sticky {
+    position: sticky;
+    background-color: unset;
+     backdrop-filter: blur(1px); 
+    background-color: rgba(0, 0, 0, 0.2);
+    border-top: solid 3px white;
+    border-bottom: solid 3px white !important;
+    top: 30px;
+    z-index: 1000;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+}
+
+.barBila {
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+}
+
+.barBila a,
+.barBila h1 {
+    color: black !important;
+    width: max-content;
+}
+
+.fixed h1 a,
+.fixed nav a {
+    color: black !important;
+    width: max-content;
+}
+
+.sticky h1 a,
+.sticky nav a {
+    color: white !important;
+    width: max-content;
+}
+
+.mainNav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 75px;
+    left: 0px;
+    right: 0px;
+    z-index: 2;
+    border-top: solid 3px black;
+    border-bottom: solid 3px black;
+    background-color: var(--bila);
+    transform-origin: 0px 0px;
+    transform: scaleY(0);
+    transition: 0.2s;
+    padding-left: 8%;
+}
+
+.mainNav a:hover {
+    transition: 300ms;
+    text-decoration: underline solid black;
+}
+header.scrolled nav a:hover {
+    text-decoration: underline solid white;
+}
+
+.mainNav a {
+    font-size: 2em;
+    padding: 10px 25px;
+    text-decoration: underline rgba(0, 0, 0, 0);
+    transition: 300ms;
+}
+
+.mainNav a span.material-symbols-outlined {
+    font-size: 1.4em;
+}
+
+.account {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.account a:first-child {
+    padding-right: 0px !important;
+}
+
+.account a:last-child {
+    padding-left: 5px !important;
+}
+
+input#hamburger-menu:checked~nav {
+    transform: scaleY(1);
+    transition: 0.8s;
+}
+
+@media (max-width: 900px) {
+    #bar {
+        position: relative;
+        top: 0;
+        background-color: white;
+        padding: 12px 10%;
+        width: 80vw;
+    }
+
+    header>#bar>h1 a,
+    header>#bar>div>nav a {
+        color: black !important;
+    }
+    .slide img{
+        height: 100%;
+    }
+}
+
+@media (min-width: 900px) {
+    #overImg {
+        top: 0vh;
+        left: unset;
+        right: unset;
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    #nadpisTxtObrDiv {
+        padding: 30vh 15vw 28vh 20vw;
+    }
+
+    #nadpisTxtObr {
+        max-width: 50%;
+    }
+
+    #nadpisTxtObrDiv div {
+        max-width: 50%;
+    }
+
+    #bar {
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        right: 0px;
+        width: 80vw;
+    }
+
+    .hamburger-icon {
+        display: none;
+    }
+
+    div.navMenu>nav {
+        transform: scaleY(1);
+        position: relative;
+        flex-direction: row;
+        background-color: unset;
+        top: 0;
+        left: 0;
+        border: unset;
+        align-items: center;
+    }
+
+    header>div#bar>div.navMenu>nav a {
+        font-size: 1.2em;
+    }
+
+    #sipky {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        padding: 0px 30px;
+    }
+
+    .sipkaDoleva {
+        clip-path: polygon(100% 0, 0 50%, 100% 100%);
+        width: 40px;
+        height: 40px;
+        background-color: rgba(255, 255, 255, 0.5);
+        cursor: pointer;
+        position: relative;
+        z-index: 3;
+    }
+
+    .sipkaDoprava {
+        clip-path: polygon(0 0, 0 100%, 100% 50%);
+        width: 40px;
+        height: 40px;
+        background-color: rgba(255, 255, 255, 0.5);
+        cursor: pointer;
+        position: relative;
+        z-index: 3;
+    }
+
+    #carky {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        bottom: 60px;
+        padding-left: 10%;
+    }
+
+    .cara {
+        height: 5px;
+        width: 200px;
+        background-color: var(--modra);
+        transform-origin: 0px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .none {
+        transform: scaleX(0);
+    }
+
+    @keyframes grow {
+        from {
+            transform: scaleX(0);
+        }
+
+        to {
+            transform: scaleX(1);
+        }
+    }
+
+    .cara {
+        position: relative;
+        height: 7px;
+        width: 200px;
+        background-color: var(--modra);
+        transform-origin: 0px;
+        transition: transform 0.3s ease-in-out;
+        z-index: 50;
+    }
+
+    .cara.active {
+        animation: grow 5s linear infinite;
+    }
+
+    .none {
+        transform: scaleX(0);
+    }
+
+    .cr{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cara-dolni {
+        position: absolute;
+        height: 7px;
+        width: 200px;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    .cara-horni{
+        position: absolute;
+        height: 7px;
+        width: 200px;
+        z-index: 500;
+        border-right: solid 5px var(--zelena);
+    }
+    .cara-horni-prvni{
+        border-left: solid 5px var(--zelena);
+    }
+}
+.no-animation{
+    transition: none !important;
+}
+
+#nadpisTxtObr {
+    font-size: 2.5em;
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+    opacity: 10;
+    transform: translateY(0);
+    animation: fadeInUp 0.8s ease-in-out;
+    position: relative;
+}
+#nadpisTxtObr::before {
+    content: '';
+    position: absolute;
+    top: -70%;
+    left: -70%;
+    width: 240%;
+    height: 240%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+
+    background: radial-gradient(rgba(0, 0, 0, 0.4) 30%, rgba(0, 0, 0, 0.2) 40%, rgba(0, 0, 0, 0.0) 70%);
+
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#viceTlacTxtObr {
+    background-color: var(--modra);
+    color: var(--bila);
+    padding: 15px 25px;
+    text-decoration: underline rgba(0, 0, 0, 0);
+    transition: 400ms;
+    animation: fadeIn 0.8s ease-in-out;
+    z-index: 5;
+}
+
+#viceTlacTxtObr:hover {
+    text-decoration: underline var(--bila);
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+

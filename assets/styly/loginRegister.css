@@ -1,0 +1,14 @@
+.back{
+    color: black;
+    display: flex;
+    align-items: center;
+}
+.material-symbols-outlined{
+    color: var(--modra);
+    padding-right: 10px;
+    font-size: 32px;
+}
+header{
+    position: absolute;
+    padding: 40px 80px;
+}

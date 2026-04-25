@@ -1,0 +1,306 @@
+
+.casDiv {
+    min-width: max-content;
+}
+
+.cas {
+    font-family: "Rubik", sans-serif;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 12px;
+}
+
+.kategorie {
+    font-family: "Rubik", sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+    padding-bottom: 10px;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.profilePhoto {
+    border-radius: 50%;
+    width: 20%;
+    margin-right: 20px;
+}
+.profilePhoto {
+    width: 90px !important;
+    height: 90px !important;
+    object-fit: cover; 
+} 
+
+.ucet a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+}
+.ucet{
+    display: flex;
+    flex-direction: row;
+}
+a {
+    color: black;
+}
+
+.autorCas {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    border-bottom: solid 2px black;
+    justify-content: space-between;
+}
+
+section {
+    padding: 15px 10%;
+}
+
+.obsahSec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainImg {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    max-height: 500px;
+    transition: 500ms;
+}
+.mainImgDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imgContainer:hover{
+    scale: 1.03;
+    transition: 500ms;
+}
+.overImg{
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 1;
+    cursor: pointer;
+}
+.imgContainer{
+    position: relative;
+    transition: 500ms;
+}
+
+.imgAlt {
+    font-family: "Rubik", sans-serif;
+    font-weight: lighter;
+    font-size: 12px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+br {
+    display: block;
+    content: "";
+    margin-top: 18px;
+}
+
+.obsah {
+    border-bottom: solid 2px black;
+}
+
+.obsah p {
+    font-family: "Spectral", serif;
+}
+
+.obsah *{
+    padding-bottom: 10px;
+}
+
+.obsah p *{
+    font-family: "Spectral", serif;
+}
+
+.odkazy {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 0px 20px;
+}
+
+
+.likeText {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.material-symbols-outlined {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.like {
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background: none;
+    border: none;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+.liked{
+    color: red;
+}
+
+.zakazano{
+    cursor: not-allowed;
+}
+
+.koment{
+    padding: 10px 15px;
+    color: var(--modra);
+    cursor: pointer;
+    transition: color 0.2s, text-decoration 0.2s;
+}
+.koment:hover{
+    text-decoration: underline;
+}
+
+.share {
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.odkazyVpravo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.tag {
+    padding: 10px 15px;
+    background-color: var(--cervena);
+    margin: 10px;
+    transition: 400ms;
+    color: white;
+}
+
+.tag:hover {
+    text-decoration: solid white underline;
+    transition: 400ms;
+}
+
+.tagy {
+    padding: 10px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media (min-width: 950px) {
+    .mainImg {
+        display: block;
+    }
+
+    .profilePhoto {
+        width: 7%;
+    }
+}
+
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.lightbox-content {
+    max-height: 70%;
+    display: block;
+    margin: 0 auto;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+}
+
+.prev { left: 20px; }
+.next { right: 20px; }
+
+.thumbnails {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    margin-top: 10px;
+}
+
+.thumbnail {
+    height: 100px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+}
+
+.thumbnail:hover, .thumbnail.active {
+    opacity: 1;
+}
+#lightbox-title{
+    color: white;
+}
+
+

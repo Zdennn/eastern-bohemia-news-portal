@@ -1,0 +1,344 @@
+.casDiv {
+    min-width: max-content;
+}
+
+.cas {
+    font-family: "Rubik", sans-serif;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 12px;
+    color: gray;
+}
+
+.kategorie {
+    font-family: "Rubik", sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+    padding-bottom: 10px;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.nadpisSec {
+    padding-top: 40px;
+}
+
+.profilePhoto {
+    border-radius: 50%;
+    width: 10%;
+    margin-right: 20px;
+}
+
+.ucet a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+}
+
+.ucet a:hover {
+    text-decoration: underline;
+}
+
+a {
+    color: black;
+}
+
+section {
+    padding: 15px 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.nadpisStrong {
+    color: rgb(128, 128, 128);
+}
+
+.zpet {
+    color: var(--modra);
+    display: flex;
+}
+
+.zpet:hover {
+    text-decoration: underline;
+}
+
+.nadpis {
+    margin-bottom: 20px;
+}
+
+.novyKomentar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.novyKomentarText {
+    resize: none;
+    height: 150px;
+    line-height: 1.2;
+
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    box-shadow: #444444;
+}
+
+.novyKomentarOdeslat {
+    align-self: flex-end;
+    padding: 10px 20px;
+    background-color: var(--modra);
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.novyKomentar input:focus,
+.novyKomentar textarea:focus {
+    outline: none;
+    border-bottom: 2px solid #444444;
+    background-color: #f5f5f5;
+}
+
+.novyKomentarOdeslat:hover {
+    text-decoration: underline;
+}
+
+.komentar {
+    padding: 15px 0px;
+    width: 100%;
+    padding: 15px;
+    border-left: solid 2px #ccc;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+}
+
+.komentar:last-of-type {
+    margin-bottom: 0;
+}
+
+.infoKom {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+
+    border-bottom: solid 1px #ccc;
+}
+
+.infoKom h3 {
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: solid #ccc 1px;
+    font-size: 18px;
+}
+.komentar p {
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+
+.reakce {
+    display: flex;
+    flex-direction: column;
+    padding-top: 7px;
+}
+
+.reakceBut {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.odpovedetTlac {
+    font-size: 14px;
+    margin-right: 15px;
+    margin: 10px 15px 10px 10px;
+    padding: 5px 15px;
+    border-right: solid #ccc 1px;
+    color: var(--modra);
+    cursor: pointer;
+    transition: color 0.2s, text-decoration 0.2s;
+}
+
+.odpovedetTlac:hover {
+    text-decoration: underline;
+}
+
+.odpovedetTlacZakaz {
+    font-size: 14px;
+    margin-right: 15px;
+    margin: 10px 15px 10px 10px;
+    padding: 5px 15px;
+    border-right: solid #ccc 1px;
+    color: var(--modra);
+    cursor: pointer;
+    transition: color 0.2s, text-decoration 0.2s;
+}
+
+.like {
+    padding: 10px 15px 10px 0px;
+    display: flex;
+    align-items: center;
+
+    transition: color 0.2s;
+
+    background: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.like:hover>.likeText {
+    text-decoration: underline;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.reakceForm {
+    display: none;
+    flex-direction: column;
+
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.formText {
+    display: flex;
+    align-items: center;
+
+}
+
+.reakceForm textarea {
+    resize: none;
+    height: 150px;
+    width: 100%;
+    font-size: 14px;
+}
+
+.formBut {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.reakceForm button {
+    padding: 10px 20px;
+    background-color: var(--modra);
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.reakceForm textarea {
+    resize: none;
+    height: 150px;
+    line-height: 1.2;
+
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+.reakceForm textarea:focus {
+    outline: none;
+    border-bottom: 2px solid #444444;
+}
+
+.reakceForm button:hover {
+    text-decoration: underline;
+}
+
+
+.podKomentar {
+    padding: 15px;
+    margin-left: 40px;
+    border-left: solid 3px var(--modra);
+    background-color: #f1f7ff;
+    width: calc(100% - 40px);
+}
+
+
+.komentarGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: solid 2px #888888;
+    width: 100%;
+}
+
+.komentarGroup:last-of-type {
+    border-bottom: none;
+}
+
+.disabled {
+    cursor: not-allowed;
+}
+
+.disabled:hover {
+    background-color: #afafaf;
+    transition: 400ms;
+    text-decoration: none;
+}
+
+.needLogin {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.needLogin a {
+    padding-left: 10px;
+    color: var(--modra);
+}
+
+.liked {
+    color: red;
+}
+
+.zakazano {
+    cursor: not-allowed;
+}
